@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  svc:
+    build: .
+    ports:
+      - "8000:80"
+    labels: 
+      - "app=pk2020-portal"
+#    container_name: pk2020-portal
+    image: myregistry.local:5000/pk2020-portal:latest
+    restart: always
